@@ -12,7 +12,9 @@ The if statment only loops once*/
 $(document).click(function () {
   if (!started) {
     $("#level-title").text("Level " + level);
-    nextSequence();
+       setTimeout(function() {
+      nextSequence();
+     }, 1500);
     started = true;
   }
 });
