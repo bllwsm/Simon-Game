@@ -7,9 +7,9 @@ var userClickedPattern = [];
 var started = false; //this var turns to true once a key is pressed and start game
 var level = 0; //we use this var to increment the levels
 
-/* this click function changes the var 'started' to "true" once game has started.
+/* this keypress function changes the var 'started' to "true" once game has started.
 The if statment only loops once*/
-$(document).click(function () {
+$(document).keypress(function () {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
